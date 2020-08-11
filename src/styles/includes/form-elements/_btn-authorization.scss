@@ -1,0 +1,23 @@
+.btn-authorization {
+    padding: 8px 20px;
+    height: auto;
+    font-size: 13px;
+    line-height: 1.08;
+    letter-spacing: -0.15px;
+    color: #404040;
+    border-radius: 100px;
+    border: solid 1px #404040;
+    background-color: transparent;
+}
+
+.btn-personal {
+    width: 33px;
+    height: 33px;
+    border-radius: 33px;
+
+    img {
+        max-width: 33px;
+        border-radius: 33px;
+        object-fit: cover;
+    }
+}

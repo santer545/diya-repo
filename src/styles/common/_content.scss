@@ -1,0 +1,120 @@
+.content {
+    padding: 0 0 60px;
+}
+
+p {
+    margin: 0 0 30px;
+    font-size: 15px;
+    line-height: 1.67;
+    letter-spacing: 0.04px;
+    color: #404040;
+}
+
+h1,
+.heading-h1 {
+    margin: 60px 0 30px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0.04px;
+    color: #404040;
+}
+
+h2,
+.heading-h2 {
+    margin: 60px 0 30px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.72;
+    letter-spacing: 0.03px;
+    color: #404040;
+}
+
+blockquote {
+    position: relative;
+    margin: 88px 0;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.81;
+    letter-spacing: 0.05px;
+    text-align: center;
+    color: #404040;
+    text-decoration: underline rgba(75, 214, 213, 1) solid;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: calc(100% + 15px);
+        transform: translateX(-50%);
+        width: 37px;
+        height: 25px;
+        background-image: url("../img/quotes.svg");
+        background-repeat: no-repeat;
+        background-size: 37px 25px;
+    }
+}
+
+a {
+    color: #094fee;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+ul:not([class]) {
+    list-style: none;
+    margin: 0 0 30px;
+    padding: 0 0 0 30px;
+
+    li {
+        position: relative;
+        font-size: 15px;
+        line-height: 1.8;
+        letter-spacing: 0.04px;
+        color: #404040;
+
+        &::before {
+            content: "";
+            width: 3px;
+            height: 3px;
+            position: absolute;
+            top: 12px;
+            left: -20px;
+            border-radius: 3px;
+            background-color: #404040;
+        }
+    }
+}
+
+ol:not([class]) {
+    list-style: none;
+    counter-reset: my-counter;
+    margin: 0 0 30px;
+    padding: 0 0 0 30px;
+
+    li {
+        position: relative;
+        counter-increment: my-counter;
+        font-size: 15px;
+        line-height: 1.8;
+        letter-spacing: 0.04px;
+        color: #404040;
+
+        &::before {
+            content: counter(my-counter) ". ";
+            position: absolute;
+            top: 1px;
+            left: -20px;
+            font-size: 14px;
+        }
+    }
+}
+
+b,
+strong {
+    font-weight: 800;
+}

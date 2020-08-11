@@ -1,0 +1,8 @@
+.btn-arrow {
+    position: relative;
+
+    &::after {
+        content: url("../img/right-arrow.png");
+        margin-left: 10px;
+    }
+}

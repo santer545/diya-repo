@@ -1,0 +1,98 @@
+@import "../utils/normalize";
+
+@import "../mixins/media";
+
+:root {
+    /* Not my favorite that line-height has to be united, but needed */
+    --lh: 1.4rem;
+}
+
+.truncate-overflow {
+    --max-lines: 2;
+    position: relative;
+    max-height: calc(var(--lh) * var(--max-lines));
+    overflow: hidden;
+}
+
+.singlLine-text {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font: 16px / 1.2 "Open Sans", "Arial", sans-serif;
+    background-color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.container {
+    padding: 0 20px;
+
+    @include media-custom(568px) {
+        margin: 0 auto;
+        max-width: 80%;
+    }
+
+    @include media-tablet {
+        max-width: 600px;
+    }
+
+    @include media-laptop {
+        max-width: 1170px;
+    }
+}
+
+.d-f {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-middle {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.main {
+    flex: 1;
+}
+
+.text-center {
+    text-align: center;
+}

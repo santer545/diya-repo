@@ -1,0 +1,35 @@
+.breadcrumbs {
+    background-color: #f0f0f0;
+
+    &-list {
+        display: flex;
+        padding: 20px 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    &-item {
+        font-size: 12px;
+        line-height: 1.17;
+
+        &:not(:last-child) {
+            padding-right: 10px;
+
+            &::after {
+                content: "/";
+                color: #999999;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &-link {
+        color: #999999;
+        letter-spacing: -0.12px;
+        text-decoration: none;
+    }
+
+    &-current {
+        color: #404040;
+    }
+}

@@ -1,0 +1,58 @@
+.wrap-404 {
+    position: relative;
+    padding-top: 101px;
+    padding-bottom: 46%;
+    border-top: 1px solid #f0f0f0;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 39%;
+    }
+
+    @media screen and (min-width: 1024px) {
+        padding-top: 79px;
+        padding-bottom: 9%;
+    }
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #f0f0f0;
+
+    &:nth-child(1) {
+        left: 20%;
+    }
+
+    &:nth-child(2) {
+        left: 40%;
+    }
+
+    &:nth-child(3) {
+        left: 60%;
+    }
+
+    &:nth-child(4) {
+        left: 80%;
+    }
+}
+
+.relative-404 {
+    position: relative;
+    z-index: 2;
+}
+
+.img-404 {
+    margin-bottom: 20px;
+}
+
+.text-404 {
+    font-size: 18px;
+    line-height: 1.72;
+    letter-spacing: -0.11px;
+    text-align: center;
+    color: #999999;
+    margin-bottom: 20px;
+}

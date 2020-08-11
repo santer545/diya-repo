@@ -1,0 +1,9 @@
+.banner {
+    position: relative;
+    height: calc(100vh - 91px - 77px);
+    overflow: hidden;
+
+    @media screen and (min-width: 568px) and (orientation: landscape) {
+        height: auto;
+    }
+}

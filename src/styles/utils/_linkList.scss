@@ -1,0 +1,13 @@
+.linkList {
+    &-element {
+        margin-right: 10px;
+
+        &:not(:last-child) {
+            &::after {
+                margin-left: 10px;
+                content: "/";
+                color: #404040;
+            }
+        }
+    }
+}
