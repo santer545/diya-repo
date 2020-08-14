@@ -2,20 +2,36 @@
 
 @import "utils/fonts";
 
+@import "utils/headings";
+
 @import "common/header";
 
-@import "includes/banners/banner-for-main";
+@import "common/footer";
 
 @import "includes/form-elements/btn-authorization";
 
 @import "includes/form-elements/form-holders";
 
+@import "includes/form-elements/input";
+
 @import "includes/form-elements/select-default";
 
 @import "includes/form-elements/buttons";
 
-@import "includes/form-elements/button-arrow";
+@import "includes/form-elements/button-default";
 
 @import "plugins/tiny-slider";
 
-@import "common/footer";
+@import "includes/banners/banner-for-main";
+
+@import "includes/subscribe/subscribe-block";
+
+@import "includes/about/about";
+
+@import "includes/learning/learning";
+
+@import "includes/direction/direction";
+
+@import "includes/gallery/gallery";
+
+@import "includes/social/social";

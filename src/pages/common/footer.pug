@@ -1,3 +1,30 @@
 footer.footer
     div.container
-        div &copy;2018 Walking – онлайн гид для туристов. Самые интересные места Украины и маршруты для туристов
+        .d-f
+            picture(class="footer-logo")
+                source(media="(min-width:768px)" srcset="img/logo.svg")
+                img(src="img/logo-mobile.svg" alt="logo")
+            ul.footer-menu
+                li
+                    a(href="") Про фонд
+                li
+                    a(href="") Наш підхід
+                li
+                    a(href="") Напрямки навчання
+                li
+                    a(href="") Галаерея
+                li
+                    a(href="") Про проект
+            .footer-social
+                p Соціальні мережі
+                ul.d-f.align-center
+                    li
+                        a(href)
+                            img(src="img/facebook.svg" alt="facebook")
+                    li
+                        a(href)
+                            img(src="img/instagram.svg" alt="instagram")
+                    li
+                        a(href)
+                            img(src="img/youtube.svg" alt="youtube")
+

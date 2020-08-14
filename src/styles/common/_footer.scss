@@ -1,8 +1,35 @@
 .footer {
-    padding: 20px 0;
-    font-size: 12px;
-    line-height: 1.58;
-    letter-spacing: 0.03px;
-    color: #777777;
-    border-top: 1px solid #f0f0f0;
+    background-color: #f2f2f2;
+    padding: 20px 0 40px;
+
+    &-menu {
+        padding: 0;
+        flex: 0 0 100%;
+        list-style: none;
+
+        li {
+            text-align: center;
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &-logo {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &-social {
+        margin: 0 auto;
+
+        > ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            justify-content: center;
+        }
+    }
 }

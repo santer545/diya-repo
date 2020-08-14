@@ -1,28 +1,23 @@
 .form-control {
     display: block;
     width: 100%;
-    height: 50px;
-    padding: 17px 20px;
+    height: 40px;
+    padding: 12px 15px;
+    font-weight: 600;
     font-size: 14px;
-    line-height: 1.5;
-    letter-spacing: -0.15px;
-    color: #404040;
-    background-color: rgba(255, 255, 255, 0.95);
+    line-height: 1.2;
+    color: #ababab;
     background-clip: padding-box;
     border: none;
-    border-radius: 50px;
+    background-color: #ffffff;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+
+    @media screen and (min-width: 1024px) {
+        max-width: 300px;
+    }
 
     &:focus {
         outline: none;
-    }
-
-    &__shadow {
-        box-shadow: 0 -2px 15px 0 rgba(0, 0, 0, 0.05);
-    }
-
-    &__search {
-        height: 40px;
-        padding: 12px 10px 13px 60px;
-        font-size: 15px;
     }
 }

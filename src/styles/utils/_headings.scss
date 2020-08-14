@@ -1,0 +1,23 @@
+.heading-main {
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 120%;
+    color: var(--text-color);
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 40px;
+    }
+
+    .marker {
+        background-color: var(--secondary-color);
+        color: #ffffff;
+        display: inline-block;
+        padding: 0 5px;
+
+        &-db {
+            display: block;
+        }
+    }
+}

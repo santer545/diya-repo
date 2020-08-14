@@ -1,0 +1,18 @@
+.gallery {
+    padding: 20px 0 60px;
+
+    @media screen and (min-width: 1280px) {
+        padding: 110px 0;
+    }
+
+    .tns-outer {
+        margin: 0 0 40px;
+    }
+
+    .tns-controls {
+        top: calc(100% + 10px);
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    }
+}

@@ -1,0 +1,28 @@
+.subscribe {
+    &-heading {
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 120%;
+        color: var(--text-color);
+        text-align: center;
+    }
+
+    &-form-wrapper {
+        padding: 20px 0;
+        background: linear-gradient(90deg, #ef60c5 0%, #fff8d4 100%);
+
+        @media screen and (min-width: 1024px) {
+            background: url("../img/subscribe-bg.png");
+            background-repeat: no-repeat;
+        }
+    }
+
+    &-form {
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

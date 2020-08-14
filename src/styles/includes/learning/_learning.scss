@@ -1,0 +1,41 @@
+.learning {
+    position: relative;
+
+    @media screen and (min-width: 1280px) {
+        padding: 110px 0 0;
+    }
+
+    &-blocks {
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            align-items: flex-start;
+        }
+    }
+
+    &-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        @media screen and (min-width: 1024px) {
+            margin-right: 40px;
+            width: 42%;
+        }
+
+        li {
+            margin-bottom: 15px;
+
+            span {
+                margin-left: 10px;
+                flex: 0 0 calc(100% - 40px);
+            }
+        }
+    }
+
+    &-decor {
+        position: absolute;
+        top: 70%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+    }
+}

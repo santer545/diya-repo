@@ -1,0 +1,17 @@
+.direction {
+    @media screen and (min-width: 1280px) {
+        padding-top: 110px;
+    }
+
+    &-massonry {
+        @media screen and (min-width: 1024px) {
+            flex: 0 0 50%;
+        }
+    }
+
+    &-text {
+        @media screen and (min-width: 1024px) {
+            flex: 0 0 50%;
+        }
+    }
+}
