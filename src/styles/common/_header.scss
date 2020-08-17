@@ -145,15 +145,9 @@
     position: absolute;
     height: 9px;
     width: 50%;
-    background: #d3531a;
+    background: var(--primary-color);
     opacity: 1;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: 0.25s ease-in-out;
-    -moz-transition: 0.25s ease-in-out;
-    -o-transition: 0.25s ease-in-out;
     transition: 0.25s ease-in-out;
 }
 
@@ -184,17 +178,11 @@
 
 #nav-icon2.open span:nth-child(1),
 #nav-icon2.open span:nth-child(6) {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
 #nav-icon2.open span:nth-child(2),
 #nav-icon2.open span:nth-child(5) {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 

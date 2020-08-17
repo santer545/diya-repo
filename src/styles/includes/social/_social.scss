@@ -1,3 +1,56 @@
 .social {
     padding: 20px 0 0;
+    position: relative;
+
+    &-narrow {
+        @media screen and (min-width: 1024px) {
+            flex: 0 0 40%;
+            padding: 0 15px;
+        }
+    }
+
+    &-wide {
+        @media screen and (min-width: 1024px) {
+            flex: 0 0 60%;
+            padding: 0 15px;
+        }
+    }
+
+    &-block {
+        margin-bottom: 40px;
+
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 80px;
+        }
+    }
+
+    &-decor {
+        position: absolute;
+        display: none;
+
+        @media screen and (min-width: 1024px) {
+            display: block;
+        }
+
+        &-1 {
+            right: 0;
+            top: 100px;
+            max-width: 500px;
+
+            @media screen and (min-width: 1920px) {
+                max-width: none;
+            }
+        }
+
+        &-2 {
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            max-width: 230px;
+
+            @media screen and (min-width: 1920px) {
+                max-width: none;
+            }
+        }
+    }
 }

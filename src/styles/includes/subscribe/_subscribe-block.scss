@@ -6,6 +6,10 @@
         line-height: 120%;
         color: var(--text-color);
         text-align: center;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 30px;
+        }
     }
 
     &-form-wrapper {
@@ -13,6 +17,7 @@
         background: linear-gradient(90deg, #ef60c5 0%, #fff8d4 100%);
 
         @media screen and (min-width: 1024px) {
+            padding: 50px 0;
             background: url("../img/subscribe-bg.png");
             background-repeat: no-repeat;
         }

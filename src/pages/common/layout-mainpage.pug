@@ -14,8 +14,22 @@ html(lang="ru")
             block content
             block footer
                 include footer
+                .modal.fade(tabindex="-1" role="dialog" id="subscribe_modal")
+                    div(class="close" data-dismiss="modal" aria-label="Close")
+                        img(src="img/close.png" alt="close")
+                    .modal-dialog(role="document")
+                        .modal-content
+                            h4(class="modal-title") Запишіться на безкоштовну консультацію
+                            .modal-form
+                                .form-group.mb20
+                                    input(class="form-control" type="text" placeholder="Ваше ім'я*")
+                                .form-group.mb20
+                                    input(class="form-control" type="tel" placeholder="Ваш телефон*" autocomplete="off")
+                                .form-group
+                                    button.btn.btn-primary.w100(type="button") отримати консультацию
             block scripts
+                script(src='js/jquery-min.js' defer)
+                script(src='js/maskes-min.js' defer)
+                script(src='js/modal-min.js' defer)
                 script(src='js/tiny-carousel-min.js' defer)
                 script(src='js/main-min.js' defer)
-                //- script(src='js/openCloseElement-min.js' defer)
-                

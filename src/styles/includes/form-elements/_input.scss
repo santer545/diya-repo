@@ -6,7 +6,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.2;
-    color: #ababab;
+    color: var(--input-color);
     background-clip: padding-box;
     border: none;
     background-color: #ffffff;
@@ -19,5 +19,25 @@
 
     &:focus {
         outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: var(--input-color);
+    }
+
+    &::-moz-placeholder {
+        /* Firefox 19+ */
+        color: var(--input-color);
+    }
+
+    &:-ms-input-placeholder {
+        /* IE 10+ */
+        color: var(--input-color);
+    }
+
+    &:-moz-placeholder {
+        /* Firefox 18- */
+        color: var(--input-color);
     }
 }

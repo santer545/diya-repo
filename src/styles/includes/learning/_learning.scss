@@ -37,5 +37,14 @@
         top: 70%;
         left: 55%;
         transform: translate(-50%, -50%);
+        z-index: -1;
+
+        @media screen and (min-width: 1024px) {
+            max-width: 450px;
+        }
+
+        @media screen and (min-width: 1920px) {
+            max-width: none;
+        }
     }
 }
