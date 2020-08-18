@@ -20,16 +20,18 @@ html(lang="ru")
                     .modal-dialog(role="document")
                         .modal-content
                             h4(class="modal-title") Запишіться на безкоштовну консультацію
-                            .modal-form
+                            from.modal-form.js_validate
                                 .form-group.mb20
                                     input(class="form-control" type="text" placeholder="Ваше ім'я*")
                                 .form-group.mb20
-                                    input(class="form-control" type="tel" placeholder="Ваш телефон*" autocomplete="off")
+                                    input(class="form-control" type="tel" placeholder="Ваш телефон*" required data-validate="phone" autocomplete="off")
+                                    span.error-text Введите номер телефона
                                 .form-group
-                                    button.btn.btn-primary.w100(type="button") отримати консультацию
+                                    button.btn.btn-primary.w100(type="submit") отримати консультацию
             block scripts
                 script(src='js/jquery-min.js' defer)
                 script(src='js/maskes-min.js' defer)
+                script(src='js/validate-min.js' defer)
                 script(src='js/modal-min.js' defer)
                 script(src='js/tiny-carousel-min.js' defer)
                 script(src='js/main-min.js' defer)

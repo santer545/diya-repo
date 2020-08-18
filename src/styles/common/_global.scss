@@ -9,6 +9,7 @@
     --secondary-color: #ffc665;
     --text-color: #4d4d4d;
     --input-color: #ababab;
+    --error-color: red;
 }
 
 .truncate-overflow {
@@ -220,4 +221,17 @@ a {
 
 .lh-15 {
     line-height: 1.5;
+}
+
+.error-text {
+    display: none;
+    font-size: 11px;
+    color: var(--error-color);
+    padding-top: 10px;
+}
+
+.has-error {
+    .error-text {
+        display: block;
+    }
 }
