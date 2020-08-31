@@ -62,12 +62,11 @@
 // Actual modal
 .modal-content {
     position: relative;
-    background-color: $modal-content-bg;
-    background-clip: padding-box;
-    border: 1px solid $modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
-    border: 1px solid $modal-content-border-color;
+    background-image: url("../img/modal-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border-radius: $border-radius-large;
-    @include box-shadow(0 3px 9px rgba(0, 0, 0, 0.5));
     // Remove focus outline from opened modal
     outline: 0;
     padding: 70px 50px;
@@ -82,13 +81,13 @@
     bottom: 0;
     left: 0;
     z-index: $zindex-modal-background;
-    background-color: $modal-backdrop-bg;
+    background: rgba(226, 226, 226, 0.9);
     // Fade for backdrop
     &.fade {
         @include opacity(0);
     }
     &.in {
-        @include opacity($modal-backdrop-opacity);
+        opacity: 0.9;
     }
 }
 
@@ -117,6 +116,15 @@
     justify-content: center;
     color: #ffffff;
     cursor: pointer;
+    z-index: 2;
+
+    img {
+        max-width: 20px;
+
+        @media screen and (min-width: 1024px) {
+            max-width: 30px;
+        }
+    }
 
     @media screen and (min-width: 1024px) {
         top: 100px;
@@ -183,18 +191,18 @@
 }
 
 .modal-form {
-    display: block;
     max-width: 300px;
     margin: 0 auto;
 }
 
+// .modal-open {
+//     .wrapper {
+//         filter: blur(50px);
+//     }
+// }
+
 // Scale up the modal
 @media (min-width: $screen-sm-min) {
-    // Automatically set modal's width for larger viewports
-    .modal-content {
-        @include box-shadow(0 5px 15px rgba(0, 0, 0, 0.5));
-    }
-
     // Modal sizes
     .modal-sm {
         width: $modal-sm;

@@ -1,8 +1,6 @@
 header.header
     div(class="container d-f align-center justify-between")
-        picture(class="logo")
-            source(media="(min-width:768px)" srcset="img/logo.svg")
-            img(src="img/logo-mobile.svg" alt="logo")
+        img(src="img/logo-dia.png" alt="logo").logo
         div(id="nav-icon2")
             span
             span
@@ -22,4 +20,8 @@ header.header
                     a(href="#gallery") Галерея
                 li.js-anchor
                     a(href="#social") Про проект
-            button.btn.btn-primary.w100-mobile(type="button"  data-toggle="modal" data-target="#subscribe_modal") отримати консультацию
+            .header-right.d-f.align-center
+                .language-wrapper
+                    span.language-item.active Укр
+                    a(href).language-item Рус
+                button.btn.btn-primary.w100-mobile(type="button"  data-toggle="modal" data-target="#subscribe_modal") отримати консультацию

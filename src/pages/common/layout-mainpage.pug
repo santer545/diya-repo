@@ -3,7 +3,7 @@ html(lang="ru")
     block head
         head
             meta(charset="utf-8")
-            title Title your site
+            title Дія
             meta(content="width=device-width, initial-scale=1" name="viewport")
             meta(content="ie=edge" http-equiv="x-ua-compatible")
             link(rel="stylesheet" href="css/main.min.css")
@@ -20,11 +20,13 @@ html(lang="ru")
                     .modal-dialog(role="document")
                         .modal-content
                             h4(class="modal-title") Запишіться на безкоштовну консультацію
-                            from.modal-form.js_validate
+                            form.contact__form.modal-form.js_validate(method="post" action="mail.php")
                                 .form-group.mb20
-                                    input(class="form-control" type="text" placeholder="Ваше ім'я*")
+                                    .alert.alert-success.contact__msg(style="display: none" role="alert") Ваши данные успешно отправлены
                                 .form-group.mb20
-                                    input(class="form-control" type="tel" placeholder="Ваш телефон*" required data-validate="phone" autocomplete="off")
+                                    input(class="form-control" type="text" name="name" id="name" placeholder="Ваше ім'я*")
+                                .form-group.mb20
+                                    input(class="form-control" type="tel" name="phone" id="phone" placeholder="Ваш телефон*" required data-validate="phone" autocomplete="off")
                                     span.error-text Введите номер телефона
                                 .form-group
                                     button.btn.btn-primary.w100(type="submit") отримати консультацию

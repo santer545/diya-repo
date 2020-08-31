@@ -32,14 +32,14 @@
             justify-content: space-between;
             height: auto;
             padding: 0;
-            width: calc(100% - 250px);
+            width: calc(100% - 155px);
             box-shadow: none;
             transform: none;
             transition: none;
             max-width: none;
 
             @media screen and (min-width: 1280px) {
-                width: calc(100% - 270px);
+                width: calc(100% - 180px);
             }
         }
     }
@@ -127,8 +127,8 @@
 }
 
 #nav-icon2 {
-    width: 60px;
-    height: 45px;
+    width: 40px;
+    height: 35px;
     position: relative;
     transform: rotate(0deg);
     transition: 0.5s ease-in-out;
@@ -143,7 +143,7 @@
 #nav-icon2 span {
     display: block;
     position: absolute;
-    height: 9px;
+    height: 6px;
     width: 50%;
     background: var(--primary-color);
     opacity: 1;
@@ -168,12 +168,12 @@
 
 #nav-icon2 span:nth-child(3),
 #nav-icon2 span:nth-child(4) {
-    top: 18px;
+    top: 13px;
 }
 
 #nav-icon2 span:nth-child(5),
 #nav-icon2 span:nth-child(6) {
-    top: 36px;
+    top: 26px;
 }
 
 #nav-icon2.open span:nth-child(1),
@@ -208,10 +208,50 @@
 
 #nav-icon2.open span:nth-child(5) {
     left: 5px;
-    top: 29px;
+    top: 19px;
 }
 
 #nav-icon2.open span:nth-child(6) {
     left: calc(50% - 5px);
-    top: 29px;
+    top: 19px;
+}
+
+.language {
+    &-wrapper {
+        margin-right: 20px;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 20px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+        &:hover,
+        &:active {
+            color: var(--text-color);
+        }
+    }
+
+    &-item {
+        font-weight: normal;
+
+        &:not(:last-child) {
+            position: relative;
+            margin-right: 10px;
+
+            &::after {
+                content: "|";
+                position: absolute;
+                right: -6px;
+                top: 0;
+            }
+        }
+
+        &.active {
+            font-weight: 600;
+        }
+    }
 }
